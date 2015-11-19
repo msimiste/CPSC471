@@ -121,15 +121,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\addressesController.cs" />
+    <Compile Include="Controllers\citiesController.cs" />
+    <Compile Include="Controllers\inventoriesController.cs" />
+    <Compile Include="Models\address.cs" />
+    <Compile Include="Model2.cs" />
+    <Compile Include="Models\actor.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\actorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\membersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\city.cs" />
+    <Compile Include="Models\inventory.cs" />
+    <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\member.cs" />
+    <Compile Include="Models\Model2.cs" />
+    <Compile Include="Models\Model3.cs" />
+    <Compile Include="Models\Model4.cs" />
     <Compile Include="Models\TestContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -176,6 +189,26 @@
     <Content Include="Views\members\Details.cshtml" />
     <Content Include="Views\members\Edit.cshtml" />
     <Content Include="Views\members\Index.cshtml" />
+    <Content Include="Views\actors\Create.cshtml" />
+    <Content Include="Views\actors\Delete.cshtml" />
+    <Content Include="Views\actors\Details.cshtml" />
+    <Content Include="Views\actors\Edit.cshtml" />
+    <Content Include="Views\actors\Index.cshtml" />
+    <Content Include="Views\addresses\Create.cshtml" />
+    <Content Include="Views\addresses\Delete.cshtml" />
+    <Content Include="Views\addresses\Details.cshtml" />
+    <Content Include="Views\addresses\Edit.cshtml" />
+    <Content Include="Views\addresses\Index.cshtml" />
+    <Content Include="Views\cities\Create.cshtml" />
+    <Content Include="Views\cities\Delete.cshtml" />
+    <Content Include="Views\cities\Details.cshtml" />
+    <Content Include="Views\cities\Edit.cshtml" />
+    <Content Include="Views\cities\Index.cshtml" />
+    <Content Include="Views\inventories\Create.cshtml" />
+    <Content Include="Views\inventories\Delete.cshtml" />
+    <Content Include="Views\inventories\Details.cshtml" />
+    <Content Include="Views\inventories\Edit.cshtml" />
+    <Content Include="Views\inventories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
