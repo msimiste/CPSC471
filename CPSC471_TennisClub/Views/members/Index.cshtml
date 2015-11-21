@@ -1,0 +1,93 @@
+﻿@model IEnumerable<CPSC471_TennisClub.Models.member>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phonenumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.firstname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.middlename)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastname)
+        </th>
+      <!-- <th>
+            @Html.DisplayNameFor(model => model.renewaldate)
+        </th>-->
+        <th>
+            @Html.DisplayNameFor(model => model.streetname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.streetnum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.datejoined)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.postalCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td align="left">             
+            @Html.DisplayFor(modelItem => item.rating)
+        </td>
+        <td align ="left"colspan="1" rowspan="1">
+            @Html.DisplayFor(modelItem => item.phonenumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.middlename)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastname)
+        </td>
+       <!-- <td>
+            @Html.DisplayFor(modelItem => item.renewaldate)
+        </td>-->
+        <td>
+            @Html.DisplayFor(modelItem => item.streetname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.streetnum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.datejoined)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.postalCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.city)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.memberID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.memberID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.memberID })
+        </td>
+    </tr>
+}
+
+</table>
